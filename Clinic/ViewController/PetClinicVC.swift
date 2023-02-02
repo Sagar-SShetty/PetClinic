@@ -97,7 +97,7 @@ class PetClinicVC: UIViewController {
             if let configDetails = self.configDetails {
                 self.chatView.isHidden = !configDetails.isChatEnabled
                 self.callView.isHidden = !configDetails.isCallEnabled
-                self.hoursLabel.text = "\(constStrings.officeHourMsg) \(configDetails.workHours)"
+                self.hoursLabel.text = "\(constStrings.officeHours) \(configDetails.workHours)"
             }
             self.petInfoTableView.reloadData()
             self.setUpAction()
